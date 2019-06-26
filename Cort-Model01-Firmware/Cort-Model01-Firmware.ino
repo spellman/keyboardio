@@ -139,7 +139,7 @@ enum { MACRO_VERSION_INFO,
   *
   */
 
-enum { PRIMARY, NUMPAD, FUNCTION, ARROW }; // layers
+enum { PRIMARY, NUMPAD, FUNCTION, PUNCTUATION }; // layers
 
 
 /**
@@ -182,7 +182,7 @@ KEYMAPS(
    Key_Backslash,  Key_Y, Key_U, Key_I,     Key_O,      Key_P,     Key_Equals,
                    Key_H, Key_J, Key_K,     Key_L,      Key_Minus, Key_Quote,
    Key_RightShift, Key_N, Key_M, Key_Comma, Key_Period, Key_Slash, Key_Semicolon,
-   ShiftToLayer(ARROW), Key_LeftAlt, Key_Spacebar, Key_RightControl,
+   ShiftToLayer(PUNCTUATION), Key_LeftAlt, Key_Spacebar, Key_RightControl,
    ShiftToLayer(FUNCTION)),
 
 #elif defined (PRIMARY_KEYMAP_DVORAK)
@@ -260,32 +260,32 @@ KEYMAPS(
    ___),
 
   [FUNCTION] =  KEYMAP_STACKED
-  (___,      Key_F1,             Key_F2,               Key_F3,          Key_F4,        Key_F5,           Key_CapsLock,
-   Key_Tab,  ___,                Key_mouseUp,          ___,             Key_mouseBtnR, Key_mouseWarpEnd, Key_mouseWarpNE,
-   Key_Home, LSHIFT(Key_Comma), Key_LeftCurlyBracket, Key_LeftBracket, Key_LeftParen, LSHIFT(Key_6),
-   Key_End,  Key_PrintScreen,    Key_Insert,           ___,             Key_mouseBtnM, Key_mouseWarpSW,  Key_mouseWarpSE,
+  (___,      Key_F1,           Key_F2,      Key_F3,     Key_F4,        Key_F5,           Key_CapsLock,
+   Key_Tab,  ___,              Key_mouseUp, ___,        Key_mouseBtnR, Key_mouseWarpEnd, Key_mouseWarpNE,
+   Key_Home, Key_mouseL,       Key_mouseDn, Key_mouseR, Key_mouseBtnL, Key_mouseWarpNW,
+   Key_End,  Key_PrintScreen,  Key_Insert,  ___,        Key_mouseBtnM, Key_mouseWarpSW,  Key_mouseWarpSE,
    ___, Key_Delete, ___, ___,
    ___,
 
    Consumer_ScanPreviousTrack, Key_F6,                 Key_F7,                   Key_F8,                   Key_F9,          Key_F10,          Key_F11,
-   LSHIFT(Key_4),     Consumer_ScanNextTrack, Key_LeftCurlyBracket,     Key_RightCurlyBracket,    Key_LeftBracket,        Key_RightBracket,   Key_F12,
-                      LSHIFT(Key_4),          Key_RightParen,           Key_RightBracket,         Key_RightCurlyBracket,  LSHIFT(Key_Period), ___,
-   Key_PcApplication, Consumer_Mute,          Consumer_VolumeDecrement, Consumer_VolumeIncrement, ___,                    Key_Backslash,      Key_Pipe,
+   Consumer_PlaySlashPause,    Consumer_ScanNextTrack, Key_LeftCurlyBracket,     Key_RightCurlyBracket,    Key_LeftBracket, Key_RightBracket, Key_F12,
+                               Key_LeftArrow,          Key_DownArrow,            Key_UpArrow,              Key_RightArrow,  ___,              ___,
+   Key_PcApplication,          Consumer_Mute,          Consumer_VolumeDecrement, Consumer_VolumeIncrement, ___,             Key_Backslash,    Key_Pipe,
    ___, ___, Key_Enter, ___,
    ___),
 
-  [ARROW] =  KEYMAP_STACKED
-  (___, ___, ___, ___, ___, ___, ___,
-   ___, ___, ___, ___, ___, ___, ___,
-   ___, ___, ___, ___, ___, ___,
-   ___, ___, ___, ___, ___, ___, ___,
+  [PUNCTUATION] =  KEYMAP_STACKED
+  (___, ___,               ___,                  ___,             ___,           ___,           ___,
+   ___, ___,               ___,                  ___,             ___,           ___,           ___,
+   ___, LSHIFT(Key_Comma), Key_LeftCurlyBracket, Key_LeftBracket, Key_LeftParen, LSHIFT(Key_6),
+   ___, ___,               ___,                  ___,             ___,           ___,           ___,
    ___, ___, ___, ___,
    ___,
 
-   ___, ___,           ___,           ___,         ___,            ___, ___,
-   ___, ___,           ___,           ___,         ___,            ___, ___,
-        Key_LeftArrow, Key_DownArrow, Key_UpArrow, Key_RightArrow, ___, ___,
-   ___, ___,           ___,           ___,         ___,            ___, ___,
+   ___, ___,           ___,            ___,              ___,                   ___,                ___,
+   ___, ___,           ___,            ___,              ___,                   ___,                ___,
+        LSHIFT(Key_4), Key_RightParen, Key_RightBracket, Key_RightCurlyBracket, LSHIFT(Key_Period), ___,
+   ___, ___,           ___,            ___,              ___,                   ___,                ___,
    ___, ___, ___, ___,
    ___)
 ) // KEYMAPS(
