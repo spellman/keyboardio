@@ -178,10 +178,10 @@ KEYMAPS(
    Key_LeftControl, Key_Backspace, Key_LeftGui, Key_Enter,
    ShiftToLayer(FUNCTION),
 
-   M(MACRO_ANY),   Key_6, Key_7, Key_8,     Key_9,      Key_0,     LockLayer(NUMPAD),
-   Key_Backslash,  Key_Y, Key_U, Key_I,     Key_O,      Key_P,     Key_Equals,
-                   Key_H, Key_J, Key_K,     Key_L,      Key_Minus, Key_Quote,
-   Key_Semicolon, Key_N, Key_M, Key_Comma, Key_Period, Key_Slash, Key_RightShift,
+   Key_Backslash,      Key_6, Key_7, Key_8,     Key_9,      Key_0,     LockLayer(NUMPAD),
+   LSHIFT(Key_Quote),  Key_Y, Key_U, Key_I,     Key_O,      Key_P,     Key_Equals,
+                       Key_H, Key_J, Key_K,     Key_L,      Key_Minus, Key_Quote,
+   Key_Semicolon,      Key_N, Key_M, Key_Comma, Key_Period, Key_Slash, Key_RightShift,
    ShiftToLayer(PUNCTUATION), Key_LeftAlt, Key_Spacebar, Key_RightControl,
    ShiftToLayer(FUNCTION)),
 
