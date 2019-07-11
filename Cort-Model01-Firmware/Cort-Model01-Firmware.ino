@@ -175,14 +175,14 @@ KEYMAPS(
    Key_Backtick,          Key_Q, Key_W, Key_E, Key_R, Key_T, Key_Tab,
    Key_Escape,            Key_A, Key_S, Key_D, Key_F, Key_G,
    Key_LeftShift, Key_Z, Key_X, Key_C, Key_V, Key_B, LSHIFT(Key_Semicolon),
-   Key_LeftControl, Key_Backspace, Key_LeftGui, Key_Enter,
+   Key_LeftAlt, Key_Backspace, Key_LeftGui, Key_LeftControl,
    ShiftToLayer(FUNCTION),
 
    Key_Backslash,      Key_6, Key_7, Key_8,     Key_9,      Key_0,     LockLayer(NUMPAD),
    LSHIFT(Key_Quote),  Key_Y, Key_U, Key_I,     Key_O,      Key_P,     Key_Equals,
                        Key_H, Key_J, Key_K,     Key_L,      Key_Minus, Key_Quote,
    Key_Semicolon,      Key_N, Key_M, Key_Comma, Key_Period, Key_Slash, Key_RightShift,
-   ShiftToLayer(PUNCTUATION), Key_LeftAlt, Key_Spacebar, Key_RightControl,
+   Key_Enter, ShiftToLayer(PUNCTUATION), Key_Spacebar, Key_RightControl,
    ShiftToLayer(FUNCTION)),
 
 #elif defined (PRIMARY_KEYMAP_DVORAK)
